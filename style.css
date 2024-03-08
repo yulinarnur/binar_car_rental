@@ -59,7 +59,7 @@
 }
 
 /* service */
-.container-service {
+.container-service .container-service {
   background-color: #ffffff;
 }
 
@@ -100,4 +100,38 @@
   font-weight: light;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+/* why us */
+.about-title {
+  padding-top: 10%;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+}
+.about-title-explan {
+  margin-top: 1%;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
+}
+.card-about {
+  padding-top: 3%;
+}
+
+.thumb-icon {
+  margin-bottom: 2%;
+}
+
+.thumb-title {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+.card-text-about {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
 }
