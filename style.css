@@ -1,0 +1,59 @@
+.container-fluid {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.navbar-brand {
+  align-self: flex-start; /* Menjadikan posisi Navbar sejajar di atas konten */
+}
+
+.rent-navbar {
+  background-color: #f1f3ff !important;
+}
+
+.nav-item {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+.btn-register {
+  font-family: Helvetica;
+  font-size: 14px;
+  border-radius: 0px;
+}
+
+/* content */
+.col-content {
+  padding-top: 8%;
+  padding-bottom: 4%;
+}
+.title-content {
+  font-family: Helvetica;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container-content {
+  background-color: #f1f3ff !important;
+}
+
+.explanation-content {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
+  margin-top: 2%;
+}
+
+.btn-rental-car {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 3%;
+  border-radius: 0px;
+}
+
+.col-img-car {
+  padding-top: 2%;
+  padding-bottom: 0%;
+  margin-right: 0%;
+  padding-left: 2%;
+}
