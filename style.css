@@ -3,7 +3,7 @@
   padding-right: 85px;
 }
 .navbar-brand {
-  align-self: flex-start; /* Menjadikan posisi Navbar sejajar di atas konten */
+  align-self: flex-start;
 }
 
 .rent-navbar {
@@ -56,4 +56,48 @@
   padding-bottom: 0%;
   margin-right: 0%;
   padding-left: 2%;
+}
+
+/* service */
+.container-service {
+  background-color: #ffffff;
+}
+
+.col-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.title-service {
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2%;
+  padding-top: 13%;
+}
+
+.icon-service {
+  list-style: none;
+  padding-left: 0%;
+}
+.item {
+  margin-right: 2%;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: light;
+  color: #0d28a6;
+}
+.item-text {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
+}
+.service-content {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
