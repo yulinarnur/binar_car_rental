@@ -59,7 +59,7 @@
 }
 
 /* service */
-.container-service .container-service {
+.container-service .container-service .container-testimonial {
   background-color: #ffffff;
 }
 
@@ -131,6 +131,48 @@
 }
 
 .card-text-about {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
+}
+
+/* testimonial */
+.testimonial-title {
+  padding-top: 5%;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  height: 60%;
+}
+
+.testimonial-title-explan {
+  margin-top: 0%;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
+  justify-content: center;
+  display: flex;
+}
+
+.testimoni-slide {
+  background-color: #f1f3ff;
+}
+/* tes */
+
+.text-card-dec {
+  background-color: #0d28a6;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.title-deskripsi {
+  font-family: Helvetica;
+  font-size: 36px;
+}
+.deskripsi {
   font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
