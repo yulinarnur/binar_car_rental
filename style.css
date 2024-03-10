@@ -180,6 +180,7 @@
 
 .faq {
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 .faq-title {
   font-size: 24px;
@@ -189,4 +190,32 @@
 .accordion-item {
   margin-bottom: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-address {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
+}
+.footer-service {
+  margin-left: 2%;
+  font-family: Helvetica;
+  font-size: 14px;
+  margin-right: 0%;
+}
+.footer-connect .copyright {
+  font-family: 14px;
+  font-weight: light;
+  margin-left: 0%;
+  margin-right: 10px;
+  display: inline-block;
+}
+.footer-icon {
+  font-family: Helvetica;
+  font-size: 15px;
+  color: #0d28a6;
+  margin-right: 2%;
+}
+.copyright {
+  flex: 1;
 }
