@@ -141,7 +141,7 @@
 }
 
 /* testimonial */
-.testimonial-title {
+/* .testimonial-title {
   padding-top: 5%;
   font-family: Helvetica;
   font-size: 24px;
@@ -162,9 +162,34 @@
 
 .testimoni-slide {
   background-color: #f1f3ff;
-}
-/* tes */
+} */
 
+/* tes */
+.testimonial-description {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: light;
+  color: black;
+  background-color: #f1f3ff;
+}
+.testimonial {
+  background-color: #ffffff;
+  width: 100%;
+  height: fit-content;
+}
+.star {
+  color: #f9cc00;
+  font-size: 20px;
+}
+.testimonial .item {
+  background-color: #f1f3ff;
+  border-radius: 8px;
+}
+.owl-theme {
+  height: 270px;
+}
+
+/*  */
 .text-card-dec {
   background-color: #0d28a6;
   color: #ffffff;
