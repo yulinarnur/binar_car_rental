@@ -24,6 +24,7 @@
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -34,29 +35,28 @@
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--navigasi -->
+          <div class="collapse navbar-collapse justify-content-lg-end">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#service"
                   >Our Service</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Why Us</a>
+                <a class="nav-link active" href="#whyus">Why Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active">Testimonial</a>
+                <a class="nav-link active" href="#testimonial">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active">FAQ</a>
+                <a class="nav-link active" href="#faq">FAQ</a>
               </li>
             </ul>
             <button class="btn btn-success btn-register" type="submit">
@@ -65,184 +65,227 @@
           </div>
         </div>
       </nav>
-
-      <!-- opening content -->
-      <div class="row container-content">
-        <div class="col-sm-6 col-content">
-          <label class="title-content"
-            >Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</label
-          ><br />
-          <label class="explanation-content">
-            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
-            <br />
-            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
-            <br />
-            untuk sewa mobil selama 24 jam. </label
-          ><br />
-          <button class="btn btn-success btn-rental-car" type="submit">
-            Mulai Sewa Mobil
-          </button>
+      <!-- offcanvas -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"><b>BCR</b></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
-        <div class="col-sm-6 col-img-car">
-          <img src="img/img_car.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <!-- service -->
-    <div class="container-fluid">
-      <div class="row container-service">
-        <div class="col-sm-6 col-service">
-          <img
-            src="img/img_service.png"
-            class="img-service"
-            width="50%"
-            alt=""
-          />
-        </div>
-        <div class="col-sm-6">
-          <label class="title-service"
-            >Best Car Rental for any kind of trip in <br />(Lokasimu)!</label
-          >
-          <label class="service-content"
-            >Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
-            lebih
-            <br />
-            murah dibandingkan yang lain, kondisi mobil baru, serta kualitas
-            <br />
-            pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting,
-            dll.</label
-          >
-          <ul class="icon-service">
-            <li>
-              <i class="bi bi-check-circle-fill item"></i>
-              <label class="item-text">
-                Sewa Mobil Dengan Supir di Bali 12 Jam</label
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#service"
+                >Our Service</a
               >
             </li>
-            <li>
-              <i class="bi bi-check-circle-fill item"></i
-              ><label class="item-text">
-                Sewa Mobil Lepas Kunci di Bali 24 Jam</label
-              >
+            <li class="nav-item">
+              <a class="nav-link active" href="#whyus">Why Us</a>
             </li>
-            <li>
-              <i class="bi bi-check-circle-fill item"></i
-              ><label class="item-text">
-                Sewa Mobil Jangka Panjang Bulanan</label
-              >
+            <li class="nav-item">
+              <a class="nav-link active" href="testimonial">Testimonial</a>
             </li>
-            <li>
-              <i class="bi bi-check-circle-fill item"></i
-              ><label class="item-text">
-                Gratis Antar - Jemput Mobil di Bandara</label
-              >
-            </li>
-            <li>
-              <i class="bi bi-check-circle-fill item"></i
-              ><label class="item-text">
-                Layanan Airport Transfer / Drop In Out</label
-              >
+            <li class="nav-item">
+              <a class="nav-link active" href="#faq">FAQ</a>
             </li>
           </ul>
+          <button class="btn btn-success btn-register" type="submit">
+            Register
+          </button>
         </div>
       </div>
     </div>
-    <!-- why us -->
-    <div class="container-fluid">
-      <div class="row container-about">
-        <div class="col-sm-12">
-          <label class="about-title">Why Us?</label><br />
-          <label class="about-title-explan"
-            >Mengapa harus pilih Binar Car Rental?</label
-          >
+    <!-- service -->
+    <section id="service">
+      <div class="container-fluid-content">
+        <div class="row container-content">
+          <div class="col-sm-6 col-content">
+            <label class="title-content"
+              >Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</label
+            ><br />
+            <label class="explanation-content">
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas
+              <br />
+              terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+              <br />
+              untuk sewa mobil selama 24 jam. </label
+            ><br />
+            <button class="btn btn-success btn-rental-car" type="submit">
+              Mulai Sewa Mobil
+            </button>
+          </div>
+          <div class="col-sm-6 col-img-car">
+            <img src="img/img_car.png" class="img-fluid" alt="" />
+          </div>
         </div>
       </div>
-      <div class="row card-about">
-        <div class="col-sm-3 col-12 mb-3">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-body-secondary">
-                <i class="bi bi-hand-thumbs-up thumb-icon"></i><br />
-              </h6>
-              <p class="thumb-title">Mobil Lengkap</p>
-              <p class="card-text-about">
-                Tersedia banyak pilihan mobil, <br />
-                kondisi masih baru, bersih dan <br />terawat
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-12 mb-3">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-body-secondary">
-                <i class="bi bi-tag"></i><br />
-              </h6>
-              <p class="thumb-title">Harga Murah</p>
-              <p class="card-text-about">
-                Harga murah dan bersaing, bisa bandingkan harga kami dengan
-                rental mobil lain
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-12 mb-3">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-body-secondary">
-                <i class="bi bi-clock"></i><br />
-              </h6>
-              <p class="thumb-title">Layanan 24 Jam</p>
-              <p class="card-text-about">
-                Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga
-                tersedia di akhir minggu
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-12 mb-3">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-body-secondary">
-                <i class="bi bi-award"></i><br />
-              </h6>
-              <p class="thumb-title">Sopir Profesional</p>
 
-              <p class="card-text-about">
-                Sopir yang profesional, <br />berpengalaman, jujur, ramah dan
-                selalu tepat waktu
-              </p>
+      <div class="container-fluid">
+        <div class="row container-service">
+          <div class="col-sm-6 col-service pt-3" data-aos="fade-right">
+            <img
+              src="img/img_service.png"
+              class="img-service"
+              width="50%"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-6 pt-3" data-aos="fade-left">
+            <label class="title-service"
+              >Best Car Rental for any kind of trip in <br />(Lokasimu)!</label
+            >
+            <label class="service-content"
+              >Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
+              lebih
+              <br />
+              murah dibandingkan yang lain, kondisi mobil baru, serta kualitas
+              <br />
+              pelayanan terbaik untuk perjalanan wisata, bisnis, wedding,
+              meeting, dll.</label
+            >
+            <ul class="icon-service">
+              <li>
+                <i class="bi bi-check-circle-fill item"></i>
+                <label class="item-text">
+                  Sewa Mobil Dengan Supir di Bali 12 Jam</label
+                >
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill item"></i
+                ><label class="item-text">
+                  Sewa Mobil Lepas Kunci di Bali 24 Jam</label
+                >
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill item"></i
+                ><label class="item-text">
+                  Sewa Mobil Jangka Panjang Bulanan</label
+                >
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill item"></i
+                ><label class="item-text">
+                  Gratis Antar - Jemput Mobil di Bandara</label
+                >
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill item"></i
+                ><label class="item-text">
+                  Layanan Airport Transfer / Drop In Out</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why us -->
+    <section id="whyus">
+      <div class="container-fluid">
+        <div class="row container-about">
+          <div class="col-sm-12">
+            <label class="about-title">Why Us?</label><br />
+            <label class="about-title-explan"
+              >Mengapa harus pilih Binar Car Rental?</label
+            >
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div class="row card-about">
+            <div class="col-sm-3 col-12 mb-3">
+              <div class="card card-why" style="width: 18rem">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <div class="rounded-circle-icon rounded-circle-oke">
+                      <i class="bi bi-hand-thumbs-up thumb-icon"></i><br />
+                    </div>
+                  </h6>
+                  <p class="thumb-title">Mobil Lengkap</p>
+                  <p class="card-text-about">
+                    Tersedia banyak pilihan mobil, <br />
+                    kondisi masih baru, bersih dan <br />terawat
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-12 mb-3">
+              <div class="card card-why" style="width: 18rem">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <div class="rounded-circle-icon rounded-circle-price">
+                      <i class="bi bi-tag"></i><br />
+                    </div>
+                  </h6>
+                  <p class="thumb-title">Harga Murah</p>
+                  <p class="card-text-about">
+                    Harga murah dan bersaing, bisa bandingkan harga kami dengan
+                    rental mobil lain
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-12 mb-3">
+              <div class="card card-why" style="width: 18rem">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <div class="rounded-circle-icon rounded-circle-time">
+                      <i class="bi bi-clock"></i><br />
+                    </div>
+                  </h6>
+                  <p class="thumb-title">Layanan 24 Jam</p>
+                  <p class="card-text-about">
+                    Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami
+                    juga tersedia di akhir minggu
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-12 mb-3">
+              <div class="card card-why" style="width: 18rem">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <div class="rounded-circle-icon rounded-circle-award">
+                      <i class="bi bi-award"></i><br />
+                    </div>
+                  </h6>
+                  <p class="thumb-title">Sopir Profesional</p>
+
+                  <p class="card-text-about">
+                    Sopir yang profesional, <br />berpengalaman, jujur, ramah
+                    dan selalu tepat waktu
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- testimonial -->
-    <!-- <div class="container-fluid">
-      <div class="row container-testimonial">
-        <div class="col-sm-12">
-          <label class="testimonial-title">Testimonial</label><br />
-          <label class="testimonial-title-explan"
-            >Berbagai review positif dari para pelanggan kami</label
-          >
-        </div>
-      </div>
-    </div> -->
+    </section>
 
     <!-- testimonial section -->
-    <section class="testimonial container-fluid p-0 pt-5" id="testimonial">
+    <section class="testimonial p-0 pt-3" id="testimonial">
       <div class="container-fluid p-0 pt-5">
         <center>
           <h2 class="fs-3 fw-bold">Testimonial</h2>
           <p>Berbagai review positif dari para pelanggan kami</p>
         </center>
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel owl-theme pt-3">
           <div class="item">
             <div class="row">
               <div class="col-md-3 text-center my-auto">
                 <img
-                  src="img/img_photo.png"
+                  src="img/img_photo.svg"
                   class="testimonial-image testimonial-image rounded-circle"
                   alt=""
                 />
@@ -273,7 +316,7 @@
             <div class="row">
               <div class="col-md-3 text-center my-auto">
                 <img
-                  src="img/img_photo.png"
+                  src="img/img_photo.svg"
                   class="testimonial-image rounded-circle"
                   alt=""
                 />
@@ -304,7 +347,7 @@
             <div class="row">
               <div class="col-md-3 text-center my-auto">
                 <img
-                  src="img/img_photo.png"
+                  src="img/img_photo2.svg"
                   class="testimonial-image rounded-circle"
                   alt=""
                 />
@@ -333,17 +376,17 @@
         </div>
 
         <div class="container">
-          <div class="row mt-3 pt-2 pb-4">
+          <div class="row pt-3 pb-0">
             <div class="col text-center">
               <button
-                class="btn btn-success rounded-circle btn-left mx-2"
+                class="btn btn-success rounded-circle btn-left"
                 type="button"
               >
                 <i class="bi bi-chevron-left p-0" style="font-weight: bold"></i>
               </button>
 
               <button
-                class="btn btn-success rounded-circle btn-right mx-2"
+                class="btn btn-success rounded-circle btn-right"
                 type="button"
               >
                 <i
@@ -357,203 +400,206 @@
       </div>
     </section>
     <!-- end of testimonial section -->
-    <!-- dec -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="card text-card-dec">
-          <div class="col-sm-12">
-            <div class="card-body">
-              <p class="title-deskripsi">Sewa Mobil di (Lokasimu) Sekarang</p>
-              <p class="deskripsi">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repudiandae nemo corporis <br />
-                praesentium dolore adipisci neque molestias illum consequatur
-                rem placeat
-              </p>
-              <button class="btn btn-success btn-rental-car" type="submit">
-                Mulai Sewa Mobil
-              </button>
+    <section class="dec">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="card text-card-dec">
+            <div class="col-sm-12">
+              <div class="card-body">
+                <p class="title-deskripsi">Sewa Mobil di (Lokasimu) Sekarang</p>
+                <p class="deskripsi">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repudiandae nemo corporis <br />
+                  praesentium dolore adipisci neque molestias illum consequatur
+                  rem placeat
+                </p>
+                <button class="btn btn-success btn-rental-car" type="submit">
+                  Mulai Sewa Mobil
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- faq -->
-    <div class="container-fluid">
-      <div class="row faq">
-        <div class="col-sm-6">
-          <p class="faq-title">Frequently Asked Question</p>
-          <p class="faq-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
+    <section id="faq">
+      <div class="container-fluid">
+        <div class="row faq">
+          <div class="col-sm-6">
+            <p class="faq-title">Frequently Asked Question</p>
+            <p class="faq-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Apa saja syarat yang dibutuhkan?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
                 >
-                  Apa saja syarat yang dibutuhkan?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Berapa hari minimal sewa mobil lepas kunci?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
                 >
-                  Berapa hari minimal sewa mobil lepas kunci?
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Berapa hari sebelumnya sabaiknya booking sewa mobil?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
                 >
-                  Berapa hari sebelumnya sabaiknya booking sewa mobil?
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Apakah Ada biaya antar-jemput?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
                 >
-                  Apakah Ada biaya antar-jemput?
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Bagaimana jika terjadi kecelakaan
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
                 >
-                  Bagaimana jika terjadi kecelakaan
-                </button>
-              </h2>
-              <div
-                id="collapseFive"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- footer -->
     <footer>
       <div class="container-fluid">
@@ -629,6 +675,10 @@
           owl.trigger("next.owl.carousel");
         });
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

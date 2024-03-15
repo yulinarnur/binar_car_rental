@@ -1,3 +1,6 @@
+* {
+  font-family: Helvetica;
+}
 .container-fluid {
   padding-left: 85px;
   padding-right: 85px;
@@ -9,29 +12,28 @@
 .navbar-brand {
   align-self: flex-start;
 }
-
 .rent-navbar {
   background-color: #f1f3ff !important;
 }
-
 .nav-item {
-  font-family: Helvetica;
   font-size: 14px;
 }
-
 .btn-register {
-  font-family: Helvetica;
   font-size: 14px;
   border-radius: 0px;
 }
 
 /* content */
+.container-fluid-content {
+  padding-left: 85px;
+  padding-right: 85px;
+  background-color: #f1f3ff !important;
+}
 .col-content {
   padding-top: 8%;
   padding-bottom: 4%;
 }
 .title-content {
-  font-family: Helvetica;
   font-size: 36px;
   font-weight: bold;
 }
@@ -41,14 +43,12 @@
 }
 
 .explanation-content {
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
   margin-top: 2%;
 }
 
 .btn-rental-car {
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: bold;
   margin-top: 3%;
@@ -71,11 +71,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 0%;
 }
 
 .title-service {
-  font-family: Helvetica;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 2%;
@@ -88,18 +87,15 @@
 }
 .item {
   margin-right: 2%;
-  font-family: Helvetica;
   font-size: 20px;
   font-weight: light;
   color: #0d28a6;
 }
 .item-text {
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
 }
 .service-content {
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
   margin-top: 1%;
@@ -109,64 +105,84 @@
 /* why us */
 .about-title {
   padding-top: 10%;
-  font-family: Helvetica;
   font-size: 24px;
   font-weight: bold;
 }
 .about-title-explan {
   margin-top: 1%;
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
 }
 .card-about {
   padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
 }
 
+/* warna icon */
+.rounded-circle-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded-circle-oke {
+  background-color: #f9cc00;
+}
+.rounded-circle-oke i {
+  font-size: 14px;
+  color: white;
+}
+
+.rounded-circle-price {
+  background-color: #fa2c5a;
+}
+.rounded-circle-price i {
+  font-size: 14px;
+  color: white;
+}
+
+.rounded-circle-time {
+  background-color: #0d28a6;
+}
+.rounded-circle-time i {
+  font-size: 14px;
+  color: white;
+}
+
+.rounded-circle-award {
+  background-color: #5cb85f;
+}
+.rounded-circle-award i {
+  font-size: 14px;
+  color: white;
+}
+
+.card-why {
+  transition: transform 0.3s ease;
+}
+.card-why:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .thumb-icon {
   margin-bottom: 2%;
 }
-
 .thumb-title {
-  font-family: Helvetica;
   font-size: 16px;
   font-weight: bold;
   padding-top: 2%;
 }
-
 .card-text-about {
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
 }
 
 /* testimonial */
-/* .testimonial-title {
-  padding-top: 5%;
-  font-family: Helvetica;
-  font-size: 24px;
-  font-weight: bold;
-  justify-content: center;
-  display: flex;
-  height: 60%;
-}
-
-.testimonial-title-explan {
-  margin-top: 0%;
-  font-family: Helvetica;
-  font-size: 14px;
-  font-weight: light;
-  justify-content: center;
-  display: flex;
-}
-
-.testimoni-slide {
-  background-color: #f1f3ff;
-} */
-
-/* tes */
 .testimonial-description {
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
   color: black;
@@ -176,6 +192,7 @@
   background-color: #ffffff;
   width: 100%;
   height: fit-content;
+  margin-bottom: 50px;
 }
 .star {
   color: #f9cc00;
@@ -186,10 +203,26 @@
   border-radius: 8px;
 }
 .owl-theme {
-  height: 270px;
+  height: auto;
+}
+.testimonial-image {
+  width: 400px;
+  height: 150px;
+}
+.btn-left,
+.btn-right {
+  /* margin-top: 6%; */
+  position: relative;
+  z-index: 2;
 }
 
-/*  */
+/* dec */
+.dec {
+  position: relative;
+  z-index: 1;
+}
+
+/*faq  */
 .text-card-dec {
   background-color: #0d28a6;
   color: #ffffff;
@@ -198,11 +231,9 @@
   padding-bottom: 3%;
 }
 .title-deskripsi {
-  font-family: Helvetica;
   font-size: 36px;
 }
 .deskripsi .faq-desc {
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
 }
@@ -214,7 +245,6 @@
 .faq-title {
   font-size: 24px;
   font-weight: bold;
-  font-family: Helvetica;
 }
 .accordion-item {
   margin-bottom: 10px;
@@ -222,29 +252,38 @@
 }
 
 .footer-address {
-  font-family: Helvetica;
   font-size: 14px;
   font-weight: light;
 }
 .footer-service {
   margin-left: 2%;
-  font-family: Helvetica;
   font-size: 14px;
   margin-right: 0%;
 }
 .footer-connect .copyright {
-  font-family: 14px;
+  font-size: 14px;
   font-weight: light;
   margin-left: 0%;
   margin-right: 10px;
   display: inline-block;
 }
+.rounded-circle-footer {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d28a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-icon {
   font-family: Helvetica;
   font-size: 15px;
   color: #0d28a6;
   margin-right: 2%;
 }
+
 .copyright {
   flex: 1;
 }
