@@ -206,8 +206,9 @@
   height: auto;
 }
 .testimonial-image {
-  width: 400px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  margin-left: 5%;
 }
 .btn-left,
 .btn-right {

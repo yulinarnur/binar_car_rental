@@ -400,6 +400,7 @@
       </div>
     </section>
     <!-- end of testimonial section -->
+
     <section class="dec">
       <div class="container-fluid">
         <div class="row">
@@ -635,47 +636,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 3,
-            },
-            1000: {
-              items: 5,
-            },
-          },
-        });
-      });
-    </script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        var owl = $(".owl-carousel");
-        owl.owlCarousel({
-          items: 1,
-          loop: true,
-          margin: 10,
-          nav: false,
-          dots: false,
-        });
-
-        $(".btn-left").click(function () {
-          owl.trigger("prev.owl.carousel");
-        });
-
-        $(".btn-right").click(function () {
-          owl.trigger("next.owl.carousel");
-        });
-      });
-    </script>
+    <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
