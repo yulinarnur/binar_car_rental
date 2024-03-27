@@ -12,7 +12,8 @@
 .navbar-brand {
   align-self: flex-start;
 }
-.rent-navbar {
+.rent-navbar,
+.nav-bg {
   background-color: #f1f3ff !important;
 }
 .nav-item {
@@ -375,5 +376,12 @@
   }
   .testimonial-image {
     padding-top: 5%;
+  }
+  .offcanvas {
+    width: 60%;
+    max-width: 60%;
+  }
+  .offcanvas-open .container-fluid {
+    margin-right: 10%;
   }
 }
