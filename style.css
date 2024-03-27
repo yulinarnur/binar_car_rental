@@ -207,7 +207,6 @@
 .testimonial-image {
   width: 100px;
   height: 100px;
-  margin-left: 5%;
 }
 .btn-left,
 .btn-right {
@@ -355,7 +354,26 @@
     width: 100%;
   }
   .about-title,
-  .about-title-explan {
+  .about-title-explan,
+  .star,
+  .testimonial-image {
     text-align: center;
+  }
+  .owl-item .item .row {
+    height: 380px;
+  }
+  .owl-item .item {
+    margin: 20px;
+  }
+  .testimonial-description,
+  .user {
+    padding-left: 4%;
+  }
+
+  .star {
+    margin-bottom: 5%;
+  }
+  .testimonial-image {
+    padding-top: 5%;
   }
 }
