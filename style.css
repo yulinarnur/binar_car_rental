@@ -109,7 +109,6 @@
   font-weight: bold;
 }
 .about-title-explan {
-  margin-top: 1%;
   font-size: 14px;
   font-weight: light;
 }
@@ -287,4 +286,76 @@
 
 .copyright {
   flex: 1;
+}
+
+/* css responsive hp */
+@media only screen and (max-width: 600px) {
+  .container-fluid,
+  .container-fluid-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card-about {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-navbar,
+  .container-content,
+  .container-service,
+  .container-testimonial,
+  .faq {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .col-content,
+  .col-service,
+  .accordion-item {
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+
+  .title-content {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+  .explanation-content {
+    font-size: 14px;
+  }
+  .btn-rental-car {
+    margin-bottom: 5%;
+  }
+
+  .title-service {
+    font-size: 20px;
+  }
+
+  .icon-service,
+  .item {
+    font-size: 16px;
+  }
+
+  .thumb-title {
+    font-size: 14px;
+  }
+
+  .card-text-about,
+  .service-content,
+  .faq-desc,
+  .footer-address,
+  .footer-service,
+  .copyright {
+    font-size: 12px;
+  }
+  .whyus,
+  .card-about {
+    width: 100%;
+  }
+  .about-title,
+  .about-title-explan {
+    text-align: center;
+  }
 }
