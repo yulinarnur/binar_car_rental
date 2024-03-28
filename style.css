@@ -383,7 +383,13 @@
   .footer-service {
     padding: 0%;
   }
-  .footer-connect {
+  .footer-connect,
+  .copyright {
     margin: 0%;
+    font-size: 14px;
+    padding-bottom: 2%;
+  }
+  .col-footer {
+    padding-left: 2%;
   }
 }
