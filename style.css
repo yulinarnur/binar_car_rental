@@ -377,11 +377,13 @@
   .testimonial-image {
     padding-top: 5%;
   }
-  .offcanvas {
-    width: 60%;
-    max-width: 60%;
-  }
   .offcanvas-open .container-fluid {
     margin-right: 10%;
+  }
+  .footer-service {
+    padding: 0%;
+  }
+  .footer-connect {
+    margin: 0%;
   }
 }
